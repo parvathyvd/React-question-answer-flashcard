@@ -48,7 +48,7 @@ const FlashCard = ({ flashcard }) => {
         </div>
       </div>
       <div className="back" ref={backEl}>
-        {flashcard.correct_answer}
+        {decodeString(flashcard.correct_answer)}
       </div>
     </div>
   );
